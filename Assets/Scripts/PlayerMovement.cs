@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f)
         {
             //transform.Translate(Vector3.forward * Input.GetAxis("Vertical") * playerSpeed);
-            rigidBody.velocity += tra   nsform.forward * Input.GetAxisRaw("Vertical") * playerSpeed;
+            rigidBody.velocity += transform.forward * Input.GetAxisRaw("Vertical") * playerSpeed;
             isMoving = true;
         }
 

@@ -507,8 +507,6 @@ public class CustomProjectiles : MonoBehaviour
     private void PlayerDash()
     {
         Vector3 dashDirection = transform.position - player.transform.position;
-
-        player.GetComponent<playerMovement>().DashInDirection(dashDirection.normalized, dashForce);
     }
 
     private IEnumerator SaveVelocity()
