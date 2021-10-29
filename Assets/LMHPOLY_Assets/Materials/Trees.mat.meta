@@ -1,7 +1,15 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/LMHPOLY_Assets/Materials/Trees.mat.meta
 guid: 35c4bacfbc0048a44a996277d0b4136f
 timeCreated: 1475470191
 licenseType: Store
+=======
+<<<<<<< HEAD
+guid: a63d0917f1b884c0496a365eaad2e508
+=======
+guid: 80f76ef7feb23424697a7672461ea127
+>>>>>>> f26c0734e2998d3f29f8be266251805b0d46a453
+>>>>>>> c3fd1339559ce44aaff6c3c4c290008e1e61879e:Assets/New Terrain.asset.meta
 NativeFormatImporter:
   userData: 
   assetBundleName: 
