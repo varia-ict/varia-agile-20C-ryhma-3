@@ -4,68 +4,54 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float playerSpeed;
-    public float sprintSpeed = 4f;
-    public float walkSpeed = 2f;
-    public float mouseSensitivity = 2f;
+    public CharacterController controller;
+
+    public float speed = 10f;
+    public float gravity = -9.81f;
     public float jumpHeight = 3f;
-    private bool isMoving = false;
-    private bool isSprinting = false;
-    private float yRot;
+    Vector3 velocity;
 
-    private Animator anim;
-    private Rigidbody rigidBody;
+    public Transform groundCheck;
+    public float groundDistance = 0.4f;
+    public LayerMask groundMask;
+    bool isGrounded;
 
-    // Use this for initialization
-    void Start()
-    {
-
-        playerSpeed = walkSpeed;
-        anim = GetComponent<Animator>();
-        rigidBody = GetComponent<Rigidbody>();
-
-    }
 
     // Update is called once per frame
     void Update()
     {
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
-        yRot += Input.GetAxis("Mouse X") * mouseSensitivity;
-        transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, yRot, transform.localEulerAngles.z);
-
-        isMoving = false;
-
-        if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
+        if (isGrounded && velocity.y < 0)
         {
-            //transform.Translate(Vector3.right * Input.GetAxis("Horizontal") * playerSpeed);
-            rigidBody.velocity += transform.right * Input.GetAxisRaw("Horizontal") * playerSpeed;
-            isMoving = true;
-        }
-        if (Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f)
-        {
-            //transform.Translate(Vector3.forward * Input.GetAxis("Vertical") * playerSpeed);
-            rigidBody.velocity += transform.forward * Input.GetAxisRaw("Vertical") * playerSpeed;
-            isMoving = true;
+            velocity.y = -2f;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+
+        if (Input.GetButtonDown("left shift"))
         {
-            transform.Translate(Vector3.up * jumpHeight);
+            speed = 20f;
+        }
+        else
+        {
+            speed = 12f;
         }
 
-        if (Input.GetAxisRaw("Sprint") > 0f)
+
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
+
+        Vector3 move = transform.right * x + transform.forward * z;
+
+        controller.Move(move * speed * Time.deltaTime);
+
+        if(Input.GetButtonDown("Jump") && isGrounded)
         {
-            playerSpeed = sprintSpeed;
-            isSprinting = true;
-        }
-        else if (Input.GetAxisRaw("Sprint") < 1f)
-        {
-            playerSpeed = walkSpeed;
-            isSprinting = false;
+            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
-        anim.SetBool("isMoving", isMoving);
-        anim.SetBool("isSprinting", isSprinting);
+        velocity.y += gravity * Time.deltaTime;
 
+        controller.Move(velocity * Time.deltaTime);
     }
 }
