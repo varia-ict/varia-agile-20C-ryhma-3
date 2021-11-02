@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/PlayerMvmnt/Editor/PackageChecker/Enemy.cs.meta
+guid: b59bfd79278f8404f91ca8c25d3350bf
+=======
+guid: 423d03fd2b3902e4ebab7d2f51a773a6
+>>>>>>> 817739193d22c84ae31a8d095973a62c9aa45422:Assets/DayNight/LightingManager.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
