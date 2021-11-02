@@ -4,11 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - Weapon
   - SecondCamera
   - BulletSpawn
   - LevelPart
   - Dummie
+=======
+  - Enemy
+>>>>>>> e3b01dc8000bb2f655cb46a6f2e72a8e7643064c
   layers:
   - Default
   - TransparentFX
@@ -16,7 +20,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Ground
   - 
   - Sky
   - 
