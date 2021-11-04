@@ -459,7 +459,22 @@ ModelImporter:
   - first:
       137: 13700022
     second: tooth2
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambertBody
+    second: {fileID: 2100000, guid: ea88ea14a82c60c419cfa79f7bf0ef00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambertCloth
+    second: {fileID: 10756, guid: 0000000000000000e000000000000000, type: 0}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambertHead
+    second: {fileID: 2100000, guid: c50d5a868339f4948882c480166108f4, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -1157,7 +1172,7 @@ ModelImporter:
     feetSpacing: 0
     globalScale: 1
     rootMotionBoneName: 
-    hasTranslationDoF: 0
+    hasTranslationDoF: 1
     hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
