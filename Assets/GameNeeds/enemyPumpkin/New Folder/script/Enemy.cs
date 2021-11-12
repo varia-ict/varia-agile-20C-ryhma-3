@@ -30,4 +30,12 @@ public class Enemy : MonoBehaviour
 
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Tomato")
+        {
+            Destroy(other.gameObject);
+        }
+    }
 }
