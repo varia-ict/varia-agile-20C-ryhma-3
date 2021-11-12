@@ -1,18 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
+
 
 public class LoadScene : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void PlayGame()
     {
-        
+        SceneManager.LoadScene("deni");
+          Debug.Log("Button clicked");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void QuitGame()
     {
-        
+        Debug.Log("Quit!");
+        Application.Quit();
+    }
+    public void OpenUrl()
+    {
+        Application.OpenURL("https://www.instagram.com/zhinar_0%22");
+    }
+    public void LoadCredit()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
+
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("FTW MAIN MENU 1");
     }
 }

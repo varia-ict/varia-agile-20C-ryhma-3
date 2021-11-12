@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class ButtonFx : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public AudioSource myFx;
+    public AudioClip HoverFx;
+    public AudioClip clickFx;
+
+    public void HoverSound()
     {
-        
+        myFx.PlayOneShot(HoverFx);
+    }
+    public void ClickSound()
+    {
+        myFx.PlayOneShot(clickFx);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
