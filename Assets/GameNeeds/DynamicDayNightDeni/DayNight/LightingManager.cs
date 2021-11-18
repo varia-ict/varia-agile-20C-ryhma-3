@@ -16,7 +16,7 @@ public class LightingManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null) throw new Exception("Only one LightingManager is allowed");
+        if (Instance != null) throw new Exception("Only one LightingManager is allowed");
         Instance = this;
     }
 
