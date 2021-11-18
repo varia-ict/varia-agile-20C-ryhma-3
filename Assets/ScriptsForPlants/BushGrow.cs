@@ -16,7 +16,7 @@ public class BushGrow : MonoBehaviour
     void Start()
     {
         // haetaan päivän mitta LightingManagerista
-        _dayTime = LightingManager.Instance.TimeOfDay;
+        //_dayTime = LightingManager.Instance.TimeOfDay;
     }
 
     // Update is called once per frame

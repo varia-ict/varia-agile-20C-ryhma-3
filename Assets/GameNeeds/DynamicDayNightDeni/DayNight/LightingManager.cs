@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 [ExecuteAlways]
 public class LightingManager : MonoBehaviour
@@ -8,18 +7,9 @@ public class LightingManager : MonoBehaviour
     [SerializeField] private Light DirectionalLight;
     [SerializeField] private LightingPreset Preset;
     //Variables
-    [SerializeField, Range(0, 600)] public float TimeOfDay;
+    [SerializeField, Range(0, 600)] private float TimeOfDay;
 
     private float dayTime = 600;
-
-    public static LightingManager Instance {get; set;}
-
-    private void Awake()
-    {
-        if (Instance == null) throw new Exception("Only one LightingManager is allowed");
-        Instance = this;
-    }
-
     private void Update()
     {
         if (Preset == null)
