@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4774a81d819d947e0a94b89f71fe7e71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tomato: {fileID: 6793487016419990959, guid: 8485bc641114d45d3bad6643aa0abb3e, type: 3}
+  tomato: {fileID: 4275773612043463435, guid: 8485bc641114d45d3bad6643aa0abb3e, type: 3}
   distans: 2
   speed: 5
   howClose: 4
