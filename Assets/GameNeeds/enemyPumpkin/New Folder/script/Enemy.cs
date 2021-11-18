@@ -8,8 +8,6 @@ public class Enemy : MonoBehaviour
     public float distans;
     public float speed;
     public float howClose;
-    public bool enemyAttack;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -27,18 +25,9 @@ public class Enemy : MonoBehaviour
             GetComponent<Rigidbody>().AddForce(transform.forward * speed);
         }
 
-        if (distans <= 2.0f)
+        if (distans <= 1.5f)
         {
 
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Tomato"))
-        {
-            enemyAttack = true;
-            Destroy(other.gameObject);
         }
     }
 }
