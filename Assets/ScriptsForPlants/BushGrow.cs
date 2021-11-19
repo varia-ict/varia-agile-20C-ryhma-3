@@ -12,12 +12,12 @@ public class BushGrow : MonoBehaviour
     private float _y;
     private float _z;
     public float xMaxScale;
-    public float TimeOfDay;
+
     // Start is called before the first frame update
     void Start()
     {
         // haetaan päivän mitta LightingManagerista
-        _dayTime = LightingManager.instance.TimeOfDay;
+        _dayTime = LightingManager.Instance.TimeOfDay;
         StartCoroutine(GrowPlant());
     }
 
