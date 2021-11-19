@@ -4,41 +4,60 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public Transform tomato;
+    private Rigidbody enemyRb;
+    private int count;
+    private Transform tomato;
     public float distans;
     public float speed;
-    public float howClose;
+    //public float howClose;
     public bool enemyAttack;
 
-    // Start is called before the first frame update
+    private BoxCollider enemybox;
+    private Animator enemyAnim;
+
+
     void Start()
     {
-        tomato = GameObject.FindGameObjectWithTag("Tomato").transform;
+        enemybox = GetComponent<BoxCollider>();
+        enemyAnim = GetComponent<Animator>();
+        enemyRb = GetComponent<Rigidbody>();
+        count = 0;
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        distans = Vector3.Distance(tomato.position, transform.position);
-
-        if (distans <= howClose)
+        if (!tomato)
         {
-            transform.LookAt(tomato);
-            GetComponent<Rigidbody>().AddForce(transform.forward * speed);
-        }
+            var tomatos = GameObject.FindGameObjectsWithTag("Tomato");
+            if(tomatos.Length > 0)
+            {
+                distans = Vector3.Distance(tomatos[0].transform.position, transform.position) * speed;
 
-        if (distans <= 2.0f)
-        {
+                transform.LookAt(tomatos[0].transform);
+                GetComponent<Rigidbody>().AddForce(transform.forward);
 
+            }
         }
+        if (count < 2) enemyAnim.SetFloat("Blend", 1);
+        if (count >= 2) enemyAnim.SetFloat("Blend", 0);
+
+    }
+
+    public void Idle()
+    {
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Tomato"))
         {
+
+            count = count + 1;
             enemyAttack = true;
             Destroy(other.gameObject);
+            tomato = null;
         }
     }
 }
