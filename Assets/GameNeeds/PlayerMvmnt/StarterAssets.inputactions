@@ -44,6 +44,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "WeaponPickup",
+                    "type": "Button",
+                    "id": "774cd63f-8011-49c9-8d46-fd3d4433c6bd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -231,6 +239,28 @@
                     "processors": "",
                     "groups": "KeyboardMouse",
                     "action": "DoorOpen",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4d1729b2-58bf-488b-a8a5-357eb5479a61",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "WeaponPickup",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c818b769-0bc8-4570-bf58-4e38ba40ac9a",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "WeaponPickup",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

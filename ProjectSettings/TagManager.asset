@@ -9,6 +9,7 @@ TagManager:
   - CinemachineTarget
   - Door
   - Gun
+  - CanGrab
   layers:
   - Default
   - TransparentFX
