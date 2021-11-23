@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Enemy : MonoBehaviour
 {
@@ -9,8 +10,8 @@ public class Enemy : MonoBehaviour
     private Transform tomato;
     public float distans;
     public float speed;
-    //public float howClose;
-    public bool enemyAttack;
+    public TextMeshProUGUI countText;
+    public GameObject loseTextObject;
 
     private BoxCollider enemybox;
     private Animator enemyAnim;
@@ -22,6 +23,8 @@ public class Enemy : MonoBehaviour
         enemyAnim = GetComponent<Animator>();
         enemyRb = GetComponent<Rigidbody>();
         count = 0;
+        SetCountText();
+        loseTextObject.SetActive(false);
     }
 
 
@@ -39,25 +42,31 @@ public class Enemy : MonoBehaviour
 
             }
         }
-        if (count < 2) enemyAnim.SetFloat("Blend", 1);
-        if (count >= 2) enemyAnim.SetFloat("Blend", 0);
+        if (count < 5) enemyAnim.SetFloat("Blend", 3);
+        if (count >= 5) enemyAnim.SetFloat("Blend", 0);
 
     }
 
-    public void Idle()
+    void SetCountText()
     {
-        
+        countText.text = "Tomato_PickedUp : " + count.ToString();
+
+        if (count >= 5)
+        {
+            loseTextObject.SetActive(true);
+        }
     }
+
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Tomato"))
         {
 
-            count = count + 1;
-            enemyAttack = true;
             Destroy(other.gameObject);
             tomato = null;
+            count = count + 1;
+            SetCountText();
         }
     }
 }
