@@ -18,25 +18,22 @@ public class BushGrow : MonoBehaviour
     {
         // haetaan päivän mitta LightingManagerista
         _dayTime = LightingManager.Instance.TimeOfDay;
-        StartCoroutine(GrowPlant());
+       StartCoroutine(GrowPlant());
     }
 
-    // Update is called once per frame
-    void Update()
+ 
+
+    private IEnumerator GrowPlant()
     {
+        var wait = new WaitForSeconds(1);
+        //var wait = new WaitForSeconds((_dayTime / _growPerTimeOfDay) * _timeToFullSize);
+        yield return wait;
+
         Debug.Log(gameObject);
         // tämän kasvin koko nyt
         _x = gameObject.transform.localScale.x;
         _y = gameObject.transform.localScale.y;
         _z = gameObject.transform.localScale.z;
-
-    }
-
-    private IEnumerator GrowPlant()
-    {
-        //var wait = new WaitForSeconds(1);
-        var wait = new WaitForSeconds((_dayTime / _growPerTimeOfDay) * _timeToFullSize);
-        yield return wait;
 
         gameObject.transform.localScale = new Vector3(
           x: _x + _growPerTime,
