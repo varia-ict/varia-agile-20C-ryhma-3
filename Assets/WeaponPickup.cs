@@ -64,10 +64,12 @@ public class WeaponPickup : MonoBehaviour
 
     private void Pickup()
     {
+        Vector3 temp = new Vector3(7.0f, 0, 0);
         currentWeapon = wp;
-        currentWeapon.transform.position = equipPosition.position;
+        currentWeapon.transform.position = temp;
+        
         currentWeapon.transform.parent = equipPosition;
-        currentWeapon.transform.localEulerAngles = new Vector3(0f, 180f, 0f);
+        currentWeapon.transform.localEulerAngles = new Vector3(0, 180, 0);
         currentWeapon.GetComponent<Rigidbody>().isKinematic = true;
     }
     private void Drop()
