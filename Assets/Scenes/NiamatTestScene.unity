@@ -1093,65 +1093,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 237865000, guid: 149914faacece2940a120e1783c4c6a9, type: 3}
-      propertyPath: speed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 237865000, guid: 149914faacece2940a120e1783c4c6a9, type: 3}
-      propertyPath: distans
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 237865000, guid: 149914faacece2940a120e1783c4c6a9, type: 3}
-      propertyPath: howClose
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 237865000, guid: 149914faacece2940a120e1783c4c6a9, type: 3}
       propertyPath: countText
       value: 
       objectReference: {fileID: 1944705584}
     - target: {fileID: 237865000, guid: 149914faacece2940a120e1783c4c6a9, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 237865000, guid: 149914faacece2940a120e1783c4c6a9, type: 3}
       propertyPath: loseTextObject
       value: 
       objectReference: {fileID: 1750450543}
-    - target: {fileID: 1615775310, guid: 149914faacece2940a120e1783c4c6a9, type: 3}
-      propertyPath: m_Mass
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1615775310, guid: 149914faacece2940a120e1783c4c6a9, type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1615775310, guid: 149914faacece2940a120e1783c4c6a9, type: 3}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1615775310, guid: 149914faacece2940a120e1783c4c6a9, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1841963947, guid: 149914faacece2940a120e1783c4c6a9, type: 3}
-      propertyPath: m_Size.y
-      value: 1.8709437
-      objectReference: {fileID: 0}
-    - target: {fileID: 1841963947, guid: 149914faacece2940a120e1783c4c6a9, type: 3}
-      propertyPath: m_Size.z
-      value: 1.098577
-      objectReference: {fileID: 0}
-    - target: {fileID: 1841963947, guid: 149914faacece2940a120e1783c4c6a9, type: 3}
-      propertyPath: m_Center.x
-      value: -1.00055964e-10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1841963947, guid: 149914faacece2940a120e1783c4c6a9, type: 3}
-      propertyPath: m_Center.y
-      value: 1.0363044
-      objectReference: {fileID: 0}
-    - target: {fileID: 1841963947, guid: 149914faacece2940a120e1783c4c6a9, type: 3}
-      propertyPath: m_Center.z
-      value: 0.018561006
-      objectReference: {fileID: 0}
     - target: {fileID: 3719395497477781988, guid: 149914faacece2940a120e1783c4c6a9, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1199,14 +1147,6 @@ PrefabInstance:
     - target: {fileID: 3719395497478071300, guid: 149914faacece2940a120e1783c4c6a9, type: 3}
       propertyPath: m_Name
       value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 3719395497478071300, guid: 149914faacece2940a120e1783c4c6a9, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3719395497485489768, guid: 149914faacece2940a120e1783c4c6a9, type: 3}
-      propertyPath: m_UpdateMode
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 149914faacece2940a120e1783c4c6a9, type: 3}
