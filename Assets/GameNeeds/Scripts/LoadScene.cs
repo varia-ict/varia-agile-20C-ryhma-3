@@ -22,6 +22,37 @@ public class LoadScene : MonoBehaviour
     {
         Application.OpenURL("https://github.com/varia-ict/varia-agile-20C-ryhma-3");
     }
+    public void OpenSaif()
+    {
+        Application.OpenURL("https://github.com/Reck-Saif");
+    }
+
+    public void OpenNiamat()
+    {
+        Application.OpenURL("https://github.com/Niamat2222");
+    }
+   
+
+    public void OpenSameer()
+    {
+        Application.OpenURL("https://github.com/Sameerwaseem21");
+    }
+
+    public void OpenSamuli()
+    {
+        Application.OpenURL("https://github.com/samuli404");
+    }
+
+    public void OpenDeni()
+    {
+        Application.OpenURL("https://github.com/MrThelink");
+    }
+
+    public void OpenZeta()
+    {
+        Application.OpenURL("https://github.com/zeta404-ops");
+    }
+
     public void LoadCredit()
     {
         SceneManager.LoadScene("Credits");
