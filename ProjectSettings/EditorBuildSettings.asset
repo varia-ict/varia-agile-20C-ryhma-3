@@ -11,5 +11,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/deni.unity
     guid: a07ceb081934a42a28dfd40a78e6f150
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 537581c8fcc674aea976de76f25d532f
+  - enabled: 1
+    path: Assets/Scenes/NiamatTestScene.unity
+    guid: 361e6ccc309bed643abf9df040b1b39e
+  - enabled: 1
+    path: Assets/Scenes/saif.unity
+    guid: 92a13b0c6991f2046a1d6f3435ff0bf7
+  - enabled: 1
+    path: Assets/Scenes/Sameer.unity
+    guid: 4847360c0abb640dba5efc25a8b0d05e
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
