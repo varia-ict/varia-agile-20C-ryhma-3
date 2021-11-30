@@ -10,6 +10,7 @@ TagManager:
   - Door
   - Gun
   - CanGrab
+  - ShootPoint
   layers:
   - Default
   - TransparentFX
