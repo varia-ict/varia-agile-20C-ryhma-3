@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4275773612043463434}
   - component: {fileID: 4275773612043463437}
   - component: {fileID: 4275773612043463436}
-  - component: {fileID: 4275773612043463433}
   - component: {fileID: 4275773612043463432}
+  - component: {fileID: -563146813120331149}
   m_Layer: 0
   m_Name: Tomato
   m_TagString: Tomato
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4275773612043463439}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45.754818, y: 14.030508, z: 21.22737}
+  m_LocalPosition: {x: -35.635414, y: 35.911064, z: -52.9597}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -95,24 +95,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.17072085, y: 0.17285268, z: 0.17286965}
-  m_Center: {x: 0.0009502135, y: -0.0018982068, z: -0.00014097616}
---- !u!54 &4275773612043463433
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4275773612043463439}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Size: {x: 0.17072085, y: 0.17285268, z: 0}
+  m_Center: {x: 0.0009502135, y: -0.0018982068, z: 0}
 --- !u!114 &4275773612043463432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,4 +109,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8cd9e7318b8d44c2bea509a6ac7858d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 35
+  speed: 50
+  breakpoint: 70
+--- !u!54 &-563146813120331149
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4275773612043463439}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
