@@ -364,7 +364,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 58780313}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 977261708}
+        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
+        m_MethodName: OpenDeni
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &58780313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -526,7 +538,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -310, y: 40}
-  m_SizeDelta: {x: 324.33, y: 66.3596}
+  m_SizeDelta: {x: 324.33, y: 68.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &132288869
 MonoBehaviour:
@@ -727,7 +739,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 132288873}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 977261708}
+        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
+        m_MethodName: OpenSameer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &132288873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1090,10 +1114,10 @@ RectTransform:
   m_Father: {fileID: 58780308}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -4.85}
+  m_SizeDelta: {x: 332, y: 66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &668604778
 MonoBehaviour:
@@ -1115,17 +1139,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Deni Israilov - Rain FX / Dynamic Weather + Map DesignBG
+  m_text: Deni Israilov - Rain FX / Dynamic Weather - Map DesignBG
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d82c288cb1a934fa0959e0955d9c753f, type: 2}
-  m_sharedMaterial: {fileID: -6709397295699183689, guid: d82c288cb1a934fa0959e0955d9c753f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 14ee3250e39754dfc9446c0b17b99539, type: 2}
+  m_sharedMaterial: {fileID: -7179978793958148615, guid: 14ee3250e39754dfc9446c0b17b99539, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1142,15 +1166,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1433,7 +1457,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 714492627}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 977261708}
+        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
+        m_MethodName: OpenNiamat
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &714492627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1761,7 +1797,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1011086546}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 977261708}
+        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
+        m_MethodName: OpenSaif
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1011086546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1909,7 +1957,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -85, y: -49}
-  m_SizeDelta: {x: 283.98633, y: 50}
+  m_SizeDelta: {x: -58.7, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1267792788
 MonoBehaviour:
@@ -1933,8 +1981,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Credits
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d82c288cb1a934fa0959e0955d9c753f, type: 2}
-  m_sharedMaterial: {fileID: -6709397295699183689, guid: d82c288cb1a934fa0959e0955d9c753f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 14ee3250e39754dfc9446c0b17b99539, type: 2}
+  m_sharedMaterial: {fileID: -7179978793958148615, guid: 14ee3250e39754dfc9446c0b17b99539, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2040,10 +2088,10 @@ RectTransform:
   m_Father: {fileID: 1315391734}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -3.20784}
+  m_SizeDelta: {x: 140, y: 36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1306603785
 MonoBehaviour:
@@ -2067,15 +2115,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: BACK
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d82c288cb1a934fa0959e0955d9c753f, type: 2}
-  m_sharedMaterial: {fileID: -6709397295699183689, guid: d82c288cb1a934fa0959e0955d9c753f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 14ee3250e39754dfc9446c0b17b99539, type: 2}
+  m_sharedMaterial: {fileID: -7179978793958148615, guid: 14ee3250e39754dfc9446c0b17b99539, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2092,15 +2140,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.9
-  m_fontSizeBase: 28.9
+  m_fontSize: 34.4
+  m_fontSizeBase: 34.4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2641,7 +2689,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 388, y: -169}
+  m_AnchoredPosition: {x: 388, y: -167.8}
   m_SizeDelta: {x: 332.4772, y: 66.3596}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1564036082
@@ -2843,7 +2891,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1564036086}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 977261708}
+        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
+        m_MethodName: OpenSamuli
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1564036086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2914,10 +2974,10 @@ RectTransform:
   m_Father: {fileID: 714492622}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -4.85}
+  m_SizeDelta: {x: 332, y: 66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1575659496
 MonoBehaviour:
@@ -2941,15 +3001,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Niamattulah Akb. - Enemy Animations (*)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d82c288cb1a934fa0959e0955d9c753f, type: 2}
-  m_sharedMaterial: {fileID: -6709397295699183689, guid: d82c288cb1a934fa0959e0955d9c753f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 14ee3250e39754dfc9446c0b17b99539, type: 2}
+  m_sharedMaterial: {fileID: -7179978793958148615, guid: 14ee3250e39754dfc9446c0b17b99539, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2966,15 +3026,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3048,10 +3108,10 @@ RectTransform:
   m_Father: {fileID: 132288868}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -4.85}
+  m_SizeDelta: {x: 324, y: 66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1687581939
 MonoBehaviour:
@@ -3073,17 +3133,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sameer W. - SoundFX  + WeaponPickup
+  m_text: Sameer W. - SoundFX  - WeaponPickup
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d82c288cb1a934fa0959e0955d9c753f, type: 2}
-  m_sharedMaterial: {fileID: -6709397295699183689, guid: d82c288cb1a934fa0959e0955d9c753f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 14ee3250e39754dfc9446c0b17b99539, type: 2}
+  m_sharedMaterial: {fileID: -7179978793958148615, guid: 14ee3250e39754dfc9446c0b17b99539, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3100,15 +3160,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3391,7 +3451,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1728737826}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 977261708}
+        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
+        m_MethodName: OpenZeta
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1728737826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3462,10 +3534,10 @@ RectTransform:
   m_Father: {fileID: 1011086541}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -0.62}
+  m_SizeDelta: {x: 332, y: 26.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1784969892
 MonoBehaviour:
@@ -3489,15 +3561,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Saif Said - plants and platforms
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d82c288cb1a934fa0959e0955d9c753f, type: 2}
-  m_sharedMaterial: {fileID: -6709397295699183689, guid: d82c288cb1a934fa0959e0955d9c753f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 14ee3250e39754dfc9446c0b17b99539, type: 2}
+  m_sharedMaterial: {fileID: -7179978793958148615, guid: 14ee3250e39754dfc9446c0b17b99539, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3514,15 +3586,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 23.17
+  m_fontSizeBase: 23.17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 1024
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3596,10 +3668,10 @@ RectTransform:
   m_Father: {fileID: 1564036081}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -4.85}
+  m_SizeDelta: {x: 332, y: 66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1845365440
 MonoBehaviour:
@@ -3621,17 +3693,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Samuli K. - House3D + Tracktors + Interior + Windows + Roof
+  m_text: Samuli K. - House3D - Tracktors - Interior - Windows - Roof
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d82c288cb1a934fa0959e0955d9c753f, type: 2}
-  m_sharedMaterial: {fileID: -6709397295699183689, guid: d82c288cb1a934fa0959e0955d9c753f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 14ee3250e39754dfc9446c0b17b99539, type: 2}
+  m_sharedMaterial: {fileID: -7179978793958148615, guid: 14ee3250e39754dfc9446c0b17b99539, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3648,15 +3720,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3730,10 +3802,10 @@ RectTransform:
   m_Father: {fileID: 222805634}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -2.40588}
+  m_SizeDelta: {x: 140, y: 36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1854819178
 MonoBehaviour:
@@ -3757,15 +3829,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: GITHUB
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d82c288cb1a934fa0959e0955d9c753f, type: 2}
-  m_sharedMaterial: {fileID: -6709397295699183689, guid: d82c288cb1a934fa0959e0955d9c753f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 14ee3250e39754dfc9446c0b17b99539, type: 2}
+  m_sharedMaterial: {fileID: -7179978793958148615, guid: 14ee3250e39754dfc9446c0b17b99539, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3782,15 +3854,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.9
-  m_fontSizeBase: 28.9
+  m_fontSize: 29.5
+  m_fontSizeBase: 29.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3974,10 +4046,10 @@ RectTransform:
   m_Father: {fileID: 1728737821}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -4.85}
+  m_SizeDelta: {x: 332, y: 66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1895389966
 MonoBehaviour:
@@ -3999,17 +4071,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Zhinar Masood - HUD + PlayerMvmnt + ButtonsFX + TV
+  m_text: Zhinar Masood - HUD - PlayerMvmnt - ButtonsFX - TV
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d82c288cb1a934fa0959e0955d9c753f, type: 2}
-  m_sharedMaterial: {fileID: -6709397295699183689, guid: d82c288cb1a934fa0959e0955d9c753f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 14ee3250e39754dfc9446c0b17b99539, type: 2}
+  m_sharedMaterial: {fileID: -7179978793958148615, guid: 14ee3250e39754dfc9446c0b17b99539, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4026,15 +4098,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
