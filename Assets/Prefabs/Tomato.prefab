@@ -28,7 +28,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4275773612043463439}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -44.892593, y: 29.128532, z: 645.1018}
+=======
+  m_LocalPosition: {x: -51.85093, y: 23.297523, z: 605.29266}
+>>>>>>> niamat/tiistaipäivä
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -95,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8cd9e7318b8d44c2bea509a6ac7858d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 130
 --- !u!64 &1940867948083577478
 MeshCollider:
   m_ObjectHideFlags: 0

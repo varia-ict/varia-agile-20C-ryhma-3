@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour
     {
         if (!tomato)
         {
-            var tomatos = GameObject.FindGameObjectsWithTag("Tomato");
+            var tomatos = GameObject.FindGameObjectsWithTag("EnemyTomato");
             if(tomatos.Length > 0)
             {
                 distans = Vector3.Distance(tomatos[0].transform.position, transform.position) * speed;
@@ -60,7 +60,7 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Tomato"))
+        if (other.gameObject.CompareTag("EnemyTomato"))
         {
 
             Destroy(other.gameObject);
