@@ -699,29 +699,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4275773612043463433, guid: 8485bc641114d45d3bad6643aa0abb3e, type: 3}
-      propertyPath: m_UseGravity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4275773612043463433, guid: 8485bc641114d45d3bad6643aa0abb3e, type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4275773612043463435, guid: 8485bc641114d45d3bad6643aa0abb3e, type: 3}
       propertyPath: m_RootOrder
       value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4275773612043463435, guid: 8485bc641114d45d3bad6643aa0abb3e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4275773612043463435, guid: 8485bc641114d45d3bad6643aa0abb3e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4275773612043463435, guid: 8485bc641114d45d3bad6643aa0abb3e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4275773612043463435, guid: 8485bc641114d45d3bad6643aa0abb3e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -761,10 +741,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4275773612043463435, guid: 8485bc641114d45d3bad6643aa0abb3e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4275773612043463436, guid: 8485bc641114d45d3bad6643aa0abb3e, type: 3}
-      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4275773612043463439, guid: 8485bc641114d45d3bad6643aa0abb3e, type: 3}
