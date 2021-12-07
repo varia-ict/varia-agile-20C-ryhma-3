@@ -3133,7 +3133,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sameer W. - SoundFX  - WeaponPickup
+  m_text: Sameer W. - SoundFX  - WeaponPickup - WpnHUD
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 14ee3250e39754dfc9446c0b17b99539, type: 2}
   m_sharedMaterial: {fileID: -7179978793958148615, guid: 14ee3250e39754dfc9446c0b17b99539, type: 2}
