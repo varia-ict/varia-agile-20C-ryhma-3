@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour
     {
         if (!tomato)
         {
-            var tomatos = GameObject.FindGameObjectsWithTag("Tomato");
+            var tomatos = GameObject.FindGameObjectsWithTag("EnemyTomato");
             if(tomatos.Length > 0)
             {
                 distans = Vector3.Distance(tomatos[0].transform.position, transform.position) * speed;
@@ -42,8 +42,8 @@ public class Enemy : MonoBehaviour
 
             }
         }
-        if (count < 5) enemyAnim.SetFloat("Blend", 3);
-        if (count >= 5) enemyAnim.SetFloat("Blend", 0);
+        if (count < 6) enemyAnim.SetFloat("Blend", 3);
+        if (count >= 6) enemyAnim.SetFloat("Blend", 0);
 
     }
 
@@ -51,7 +51,7 @@ public class Enemy : MonoBehaviour
     {
         countText.text = "Tomato_PickedUp : " + count.ToString();
 
-        if (count >= 5)
+        if (count >= 6)
         {
             loseTextObject.SetActive(true);
         }
@@ -60,7 +60,7 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Tomato"))
+        if (other.gameObject.CompareTag("EnemyTomato"))
         {
 
             Destroy(other.gameObject);
