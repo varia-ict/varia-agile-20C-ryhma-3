@@ -68,5 +68,10 @@ public class Enemy : MonoBehaviour
             count = count + 1;
             SetCountText();
         }
+
+        if (other.gameObject.CompareTag("Tomato"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
