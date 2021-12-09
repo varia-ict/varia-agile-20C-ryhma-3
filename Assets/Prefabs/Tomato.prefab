@@ -29,10 +29,14 @@ Transform:
   m_GameObject: {fileID: 4275773612043463439}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalPosition: {x: -44.892593, y: 29.128532, z: 645.1018}
 =======
   m_LocalPosition: {x: -51.85093, y: 23.297523, z: 605.29266}
 >>>>>>> niamat/tiistaipäivä
+=======
+  m_LocalPosition: {x: -42.695683, y: 25.24321, z: 638.3445}
+>>>>>>> 42c6afebe961cadc986305e6e54960b9d11c38cc
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
