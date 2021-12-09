@@ -60,13 +60,17 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Tomato"))
+        if (other.gameObject.CompareTag("EnemyTomato"))
         {
 
             Destroy(other.gameObject);
             tomato = null;
             count = count + 1;
             SetCountText();
+        }
+        if (other.gameObject.CompareTag("Tomato"))
+        {
+            Destroy(gameObject);
         }
     }
 }
