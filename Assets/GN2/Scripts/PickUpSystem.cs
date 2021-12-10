@@ -8,6 +8,8 @@ public class PickUpSystem : MonoBehaviour
     public Rigidbody rb;
     public BoxCollider coll;
     public Transform player, gunContainer, fpsCam;
+    public Canvas ammoText;
+    public GameObject gunPic;
 
     public float pickUpRange, pickUpTime;
     public float dropForwardForce, dropUpwardForce;
@@ -82,5 +84,6 @@ public class PickUpSystem : MonoBehaviour
 
         //Disable script
         gunScript.enabled = false;
+
     }
 }
