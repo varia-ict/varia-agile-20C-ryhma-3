@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 183035592}
   - component: {fileID: 183035591}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Ammocounter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -588,7 +588,7 @@ GameObject:
   - component: {fileID: 738830320}
   - component: {fileID: 738830321}
   m_Layer: 0
-  m_Name: cartoon-gun-png-transparent-cartoon-gun-images-838109
+  m_Name: gunpic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -703,11 +703,11 @@ GameObject:
   - component: {fileID: 857708610}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: bulletcanvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &857708610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1166,6 +1166,7 @@ MonoBehaviour:
   dropForwardForce: 15
   dropUpwardForce: 7
   equipped: 0
+  canvasObject: {fileID: 0}
 --- !u!114 &1182017908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1518,11 +1519,12 @@ MonoBehaviour:
   player: {fileID: 917357727}
   gunContainer: {fileID: 752542083}
   fpsCam: {fileID: 1540249302}
-  pickUpRange: 44
-  pickUpTime: 0.1
-  dropForwardForce: 15
-  dropUpwardForce: 7
+  pickUpRange: 40.42
+  pickUpTime: 3
+  dropForwardForce: 1
+  dropUpwardForce: 1
   equipped: 0
+  canvasObject: {fileID: 857708609}
 --- !u!65 &1646595952
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1558,9 +1560,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1236258190161554}
   serializedVersion: 2
-  m_Mass: 100
+  m_Mass: 2000
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1679,9 +1681,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tomato: {fileID: 4275773612043463439, guid: 8485bc641114d45d3bad6643aa0abb3e, type: 3}
-  maxAmmo: 20
-  reloadTime: 1
-  ammo: 20
+  ammoToReload: 6
+  timeToreload: 10
+  ammo: 6
   isFiring: 0
   ammoDisplay: {fileID: 183035591}
 --- !u!1 &1326077802556790

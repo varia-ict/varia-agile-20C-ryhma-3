@@ -7,10 +7,10 @@ public class Reloadingandammo : MonoBehaviour
 {
     public GameObject tomato;
     //´this is telling that hw much ammo we need o put like max out one
-    public int maxAmmo = 6;
-    private int currentAmmo = 1;
+    public int ammoToReload = 6;
+    private int currentAmmo = 0;
     // from this i can set reload time how much we want
-    public float reloadTime = 1f;
+    public float timeToreload = 2;
     public int ammo;
     public bool isFiring;
     public Text ammoDisplay;
@@ -19,7 +19,7 @@ public class Reloadingandammo : MonoBehaviour
     void Start()
     {
         // when the gun is picked up it will make sure to fill ammo
-        currentAmmo = maxAmmo;
+        currentAmmo = ammoToReload;
     }
 
     // Update is called once per frame
@@ -28,7 +28,9 @@ public class Reloadingandammo : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.R))
         {
-            Reload();
+            
+             Reload();
+        
         }
 
 
@@ -44,7 +46,7 @@ public class Reloadingandammo : MonoBehaviour
         }
 
 
-        if (currentAmmo < 0)
+        if (currentAmmo < 0 )
         {
             Reload();
         }
@@ -52,7 +54,8 @@ public class Reloadingandammo : MonoBehaviour
 
     void Reload ()
     {
-        ammo += maxAmmo;
+         new WaitForSeconds(timeToreload);
+        ammo += ammoToReload;
     }
 
 }
