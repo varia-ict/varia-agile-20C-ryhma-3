@@ -9,6 +9,8 @@ public class LightingManager : MonoBehaviour
     [SerializeField] private LightingPreset Preset;
     //Variables
     [SerializeField, Range(0, 600)] public float TimeOfDay;
+    public int DayNro = 1;
+    private int nextDay = 2;
 
     private float dayTime = 600;
 
@@ -32,9 +34,19 @@ public class LightingManager : MonoBehaviour
             TimeOfDay %= dayTime; //Modulus to ensure always between 0-24
             UpdateLighting(TimeOfDay / dayTime);
         }
-        else
+
+        // jos päivä ei ole vaihtunut ja peliaika on alle .5f, päivitä päivämäärä.
+        if (DayNro != nextDay && TimeOfDay < .5f)
         {
-            UpdateLighting(TimeOfDay / dayTime);
+            DayNro = nextDay;
+            Debug.Log("UUSI PÄIVÄ");
+        }
+
+        // jos pelipäivä on päivitetty mutta nextday on yhä nykyinen päivä, päivitä nextday.
+        if (nextDay == DayNro && TimeOfDay > .5f)
+        {
+            nextDay++;
+            Debug.Log("Seuraava päivä");
         }
     }
 
