@@ -17,3 +17,6 @@ Credits:
 [Niamatullah](https://github.com/zeta404-ops)
 <br>
 [Zhinar](https://github.com/zeta404-ops)
+
+IDE: [VisualStudio](https://visualstudio.microsoft.com)
+Engine: [Unity](https://unity.com) 
