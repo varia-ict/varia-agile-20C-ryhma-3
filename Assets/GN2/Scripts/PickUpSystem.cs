@@ -15,6 +15,10 @@ public class PickUpSystem : MonoBehaviour
     public bool equipped;
     public static bool slotFull;
 
+    public GameObject canvasObject;
+
+
+
     private void Start()
     {
         if (!equipped)
@@ -34,10 +38,24 @@ public class PickUpSystem : MonoBehaviour
     {
         //Check if player is in range and "E" is pressed
         Vector3 distanceToPlayer = player.position - transform.position;
-        if (!equipped && distanceToPlayer.magnitude <= pickUpRange && Input.GetKeyDown(KeyCode.E) && !slotFull) PickUp();
+        if (!equipped && distanceToPlayer.magnitude <= pickUpRange && Input.GetKeyDown(KeyCode.E) && !slotFull) 
+        {
+            PickUp();
+            canvasObject.SetActive(true);
+        }
+        
+
 
         //Drop if equipped and "Q" is pressed
-        if (equipped && Input.GetKeyDown(KeyCode.Q)) Drop();
+        if (equipped && Input.GetKeyDown(KeyCode.Q))
+        {
+            Drop();
+            canvasObject.SetActive(false);
+        }
+     
+
+
+
     }
 
     private void PickUp()
@@ -57,6 +75,9 @@ public class PickUpSystem : MonoBehaviour
 
         //Enable script
         gunScript.enabled = true;
+        
+
+
     }
 
     private void Drop()
@@ -82,5 +103,8 @@ public class PickUpSystem : MonoBehaviour
 
         //Disable script
         gunScript.enabled = false;
+        
+
+
     }
 }

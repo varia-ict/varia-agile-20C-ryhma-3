@@ -31,7 +31,7 @@ public class BushGrow : MonoBehaviour
         //var wait = new WaitForSeconds((_dayTime / _growPerTimeOfDay) * _timeToFullSize);
         yield return wait;
 
-        Debug.Log(gameObject);
+        
         // tämän kasvin koko nyt
         _x = gameObject.transform.localScale.x;
         _y = gameObject.transform.localScale.y;
