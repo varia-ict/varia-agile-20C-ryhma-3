@@ -30,11 +30,11 @@ public class Rain : MonoBehaviour
         // rain can start only even days;
         var rainyDay = dayNro % 2 == 0;
 
-        Debug.Log($"d: {dayNro} b: {dayNro % 2 == 0}");
+        
 
         if (rainyDay && random && !rained)
         {
-            Debug.Log("Sadepäivä");
+            
             StartRain();
         }
         if (!rainyDay && rained)
@@ -63,7 +63,7 @@ public class Rain : MonoBehaviour
         }
         else
         {
-            Debug.Log("Sade loppu");
+            
             RainStop();
             RainEffectFalse();
         }
