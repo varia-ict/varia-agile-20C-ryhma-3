@@ -6,6 +6,7 @@ public class EnemyHealth : MonoBehaviour
 {
     public int health;
     Animator anim;
+    public bool playedAnimation;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,9 @@ public class EnemyHealth : MonoBehaviour
     void Update()
     {
         if (health <= 0)
+        {
+            playedAnimation = true;
+        }
             Death();
     }
 

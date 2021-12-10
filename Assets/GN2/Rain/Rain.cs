@@ -21,6 +21,7 @@ public class Rain : MonoBehaviour
     }
 
     // Update is called once per frame
+    [System.Obsolete]
     void FixedUpdate()
     {
         dayNro = LightingManager.Instance.DayNro;
@@ -43,6 +44,7 @@ public class Rain : MonoBehaviour
         }
     }
 
+    [System.Obsolete]
     void StartRain()
     {
         /*timer = timer + Time.deltaTime;
@@ -69,7 +71,7 @@ public class Rain : MonoBehaviour
         }
         return;
     }
-
+    [System.Obsolete]
     void RainStop()
     {
         timer = timer + Time.deltaTime;
