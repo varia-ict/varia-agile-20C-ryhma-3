@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour
 {
+    public AudioSource shootSound;
+
     public GameObject tomato;
     // Start is called before the first frame update
     void Start()
@@ -18,6 +20,7 @@ public class PlayerShoot : MonoBehaviour
 
             _ = Instantiate(tomato, transform.position, transform.rotation);
             tomato.transform.position = transform.position + transform.forward;
+            shootSound.Play();
         }
     }
 }

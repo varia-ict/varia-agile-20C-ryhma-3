@@ -10,10 +10,11 @@ public class Reloadingandammo : MonoBehaviour
     public int ammoToReload = 6;
     private int currentAmmo = 0;
     // from this i can set reload time how much we want
-    public float timeToreload = 2;
+    public float timeToreload = 5f;
     public int ammo;
     public bool isFiring;
     public Text ammoDisplay;
+    public AudioSource shootSfx;
 
     // Start is called before the first frame update
     void Start()
@@ -33,29 +34,35 @@ public class Reloadingandammo : MonoBehaviour
         
         }
 
-
-
         ammoDisplay.text = ammo.ToString();
-        if (Input.GetMouseButtonDown(0) && !isFiring && ammo > 0)
+        if (Input.GetMouseButtonDown(0) && ammo > 0)
         {
-            Instantiate(tomato, transform.position, transform.rotation);
-            tomato.transform.position = transform.position + transform.forward;
-            isFiring = true;
-            ammo--;
-            isFiring = false;
+            Shoot();
         }
+        else { isFiring = true; }
 
-
-        if (currentAmmo < 0 )
-        {
-            Reload();
-        }
     }
 
-    void Reload ()
+    void Shoot()
     {
-      
-        ammo += ammoToReload;
+       
+            Instantiate(tomato, transform.position, transform.rotation);
+        tomato.transform.position = transform.position + transform.forward;
+        isFiring = true;
+        ammo--;
+        isFiring = false;
+        shootSfx.Play();
+        isFiring = false;
+    }    
+
+    void Reload ()
+       
+    {
+        if (ammo <= 0)
+        {
+             ammo += ammoToReload;
+        }
+         
     }
 
 }
