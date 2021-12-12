@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class Reloadingandammo : MonoBehaviour
 {
     public GameObject tomato;
+
+
     //´this is telling that hw much ammo we need o put like max out one
     public int ammoToReload = 6;
     private int currentAmmo = 0;
@@ -39,8 +41,8 @@ public class Reloadingandammo : MonoBehaviour
         {
             Shoot();
         }
-        else { isFiring = true; }
 
+            
     }
 
     void Shoot()
@@ -48,11 +50,12 @@ public class Reloadingandammo : MonoBehaviour
        
             Instantiate(tomato, transform.position, transform.rotation);
         tomato.transform.position = transform.position + transform.forward;
+       
         isFiring = true;
         ammo--;
         isFiring = false;
         shootSfx.Play();
-        isFiring = false;
+       
     }    
 
     void Reload ()

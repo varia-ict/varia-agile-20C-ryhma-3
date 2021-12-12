@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PickUpSystem : MonoBehaviour
 {
-    public Tomato gunScript;
+    public Reloadingandammo gunScript;
     public Rigidbody rb;
     public BoxCollider coll;
     public Transform player, gunContainer, fpsCam;
@@ -12,12 +12,12 @@ public class PickUpSystem : MonoBehaviour
     public float pickUpRange, pickUpTime;
     public float dropForwardForce, dropUpwardForce;
 
+    public GameObject theGun;
+
     public bool equipped;
     public static bool slotFull;
 
     public GameObject canvasObject;
-
-
 
     private void Start()
     {
@@ -26,12 +26,14 @@ public class PickUpSystem : MonoBehaviour
             gunScript.enabled = false;
             rb.isKinematic = false;
             coll.isTrigger = false;
+            
         }
         if (equipped)
         {
             slotFull = true;
             rb.isKinematic = true;
             coll.isTrigger = true;
+           
         }
     }
     private void Update()
@@ -92,14 +94,8 @@ public class PickUpSystem : MonoBehaviour
         rb.isKinematic = false;
         coll.isTrigger = false;
 
-        rb.velocity = player.GetComponent<Rigidbody>().velocity;
-
-        //Add force
-        rb.AddForce(fpsCam.forward * dropForwardForce, ForceMode.Impulse);
-        rb.AddForce(fpsCam.up * dropUpwardForce, ForceMode.Impulse);
-        //Add random rotation
-        float random = Random.Range(-1f, 1f);
-        rb.AddTorque(new Vector3(random, random, random) * 10);
+        theGun.transform.position = new Vector3(-9, 22, 475);
+    
 
         //Disable script
         gunScript.enabled = false;
