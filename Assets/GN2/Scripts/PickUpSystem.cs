@@ -19,6 +19,8 @@ public class PickUpSystem : MonoBehaviour
 
     public GameObject canvasObject;
 
+    public AudioSource gunDropSfx;
+    public AudioSource gunPickupSfx;
     private void Start()
     {
         if (!equipped)
@@ -44,6 +46,7 @@ public class PickUpSystem : MonoBehaviour
         {
             PickUp();
             canvasObject.SetActive(true);
+            gunPickupSfx.Play();
         }
         
 
@@ -53,6 +56,7 @@ public class PickUpSystem : MonoBehaviour
         {
             Drop();
             canvasObject.SetActive(false);
+            gunDropSfx.Play();
         }
      
 

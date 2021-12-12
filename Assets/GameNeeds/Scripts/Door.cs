@@ -5,8 +5,12 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
+
+    //Made by Zeta404
+
+    public AudioSource openAudio;
     public Transform PlayerCamera;
-    // max distance to open door
+    // max distance to open door can be changed in inspector
     public float MaxDistance = 1;
 
     private bool opened = false;
@@ -16,7 +20,7 @@ public class Door : MonoBehaviour
 
     void Update()
     {
-        //player press F on the Keyboard.
+        //player press F on the Keyboard calls pressed function which excutes right code for our function
         if (Input.GetKeyDown(KeyCode.F))
         {
             Pressed();
@@ -41,9 +45,14 @@ public class Door : MonoBehaviour
                 
                 //set the bool the opposite of what it is.
                 opened = !opened;
+                //plays audio when pressed 
+                openAudio.Play();
 
                 // set the bool true so it will play the animation.
                 anim.SetBool("Opened", !opened);
+                //plays audio when pressed 
+
+                
             }
         }
     }

@@ -7,6 +7,7 @@ public class Reloadingandammo : MonoBehaviour
 {
     public GameObject tomato;
 
+    public AudioSource reloadSfx;
 
     //´this is telling that hw much ammo we need o put like max out one
     public int ammoToReload = 6;
@@ -63,6 +64,7 @@ public class Reloadingandammo : MonoBehaviour
     {
         if (ammo <= 0)
         {
+            reloadSfx.Play();
              ammo += ammoToReload;
         }
          
