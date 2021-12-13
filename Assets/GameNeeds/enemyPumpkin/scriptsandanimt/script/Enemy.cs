@@ -51,7 +51,7 @@ public class Enemy : MonoBehaviour
     {
         countText.text = "Tomato's Pickedup: " + count.ToString();
 
-        if (count >= 6)
+        if (count >= 20)
         {
             loseTextObject.SetActive(true);
             Time.timeScale = 0;
