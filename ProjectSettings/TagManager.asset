@@ -11,6 +11,9 @@ TagManager:
   - Gun
   - CanGrab
   - ShootPoint
+  - bulletcanvas
+  - EnemyTomato
+  - floor
   layers:
   - Default
   - TransparentFX

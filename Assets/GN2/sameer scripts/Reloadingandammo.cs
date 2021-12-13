@@ -8,8 +8,10 @@ public class Reloadingandammo : MonoBehaviour
     public GameObject tomato;
 
     public AudioSource reloadSfx;
+    public AudioSource hitmarker;
 
-    //´this is telling that hw much ammo we need o put like max out one
+
+    //?this is telling that hw much ammo we need o put like max out one
     public int ammoToReload = 6;
     private int currentAmmo = 0;
     // from this i can set reload time how much we want
@@ -27,14 +29,15 @@ public class Reloadingandammo : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update(){
-       
-        
+    void Update()
+    {
+
+
         if (Input.GetKeyDown(KeyCode.R))
         {
-            
-             Reload();
-        
+
+            Reload();
+
         }
 
         ammoDisplay.text = ammo.ToString();
@@ -43,31 +46,31 @@ public class Reloadingandammo : MonoBehaviour
             Shoot();
         }
 
-            
+
     }
 
     void Shoot()
     {
-       
-            Instantiate(tomato, transform.position, transform.rotation);
+
+        Instantiate(tomato, transform.position, transform.rotation);
         tomato.transform.position = transform.position + transform.forward;
-       
+
         isFiring = true;
         ammo--;
         isFiring = false;
         shootSfx.Play();
-       
-    }    
 
-    void Reload ()
-       
+    }
+
+    void Reload()
+
     {
         if (ammo <= 0)
         {
             reloadSfx.Play();
-             ammo += ammoToReload;
+            ammo += ammoToReload;
         }
-         
+
     }
 
 }

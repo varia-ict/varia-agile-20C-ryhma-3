@@ -8,7 +8,11 @@ public class Tomato : MonoBehaviour
     private float downWall = -60f;
     public float speed;
     private Rigidbody tomatoRb;
+
+
+
     // Start is called before the first frame update
+
     void Start()
     {
         tomatoRb = GetComponent<Rigidbody>();
@@ -27,5 +31,16 @@ public class Tomato : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
     }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Floor")
+        {
+            Debug.Log("Collided");
+        }
+
+    }
+
+
 }
