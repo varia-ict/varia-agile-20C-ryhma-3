@@ -42,8 +42,8 @@ public class Enemy : MonoBehaviour
 
             }
         }
-        if (count < 6) enemyAnim.SetFloat("Blend", 3);
-        if (count >= 6) enemyAnim.SetFloat("Blend", 0);
+        if (count < 200) enemyAnim.SetFloat("Blend", 3);
+        if (count >= 200) enemyAnim.SetFloat("Blend", 0);
 
     }
 
@@ -51,7 +51,7 @@ public class Enemy : MonoBehaviour
     {
         countText.text = "Tomato's Pickedup: " + count.ToString();
 
-        if (count >= 6)
+        if (count >= 200)
         {
             loseTextObject.SetActive(true);
             Time.timeScale = 0;
