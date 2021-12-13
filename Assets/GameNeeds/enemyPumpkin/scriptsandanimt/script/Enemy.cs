@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEditor;
+using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Enemy : MonoBehaviour
 {
@@ -10,8 +12,8 @@ public class Enemy : MonoBehaviour
     private Transform tomato;
     public float distans;
     public float speed;
-    public TextMeshProUGUI countText;
-    public GameObject loseTextObject;
+    public TextMeshProUGUI TomatoCount;
+    public GameObject LoseText;
 
     private BoxCollider enemybox;
     private Animator enemyAnim;
@@ -24,7 +26,7 @@ public class Enemy : MonoBehaviour
         enemyRb = GetComponent<Rigidbody>();
         count = 0;
         SetCountText();
-        loseTextObject.SetActive(false);
+        LoseText.SetActive(false);
     }
 
 
@@ -33,7 +35,7 @@ public class Enemy : MonoBehaviour
         if (!tomato)
         {
             var tomatos = GameObject.FindGameObjectsWithTag("EnemyTomato");
-            if(tomatos.Length > 0)
+            if (tomatos.Length > 0)
             {
                 distans = Vector3.Distance(tomatos[0].transform.position, transform.position) * speed;
 
@@ -42,19 +44,20 @@ public class Enemy : MonoBehaviour
 
             }
         }
-        if (count < 6) enemyAnim.SetFloat("Blend", 3);
-        if (count >= 6) enemyAnim.SetFloat("Blend", 0);
+        if (count < 1056) enemyAnim.SetFloat("Blend", 3);
+        if (count >= 1056) enemyAnim.SetFloat("Blend", 0);
 
     }
 
     void SetCountText()
     {
-        countText.text = "Tomato's Pickedup: " + count.ToString();
+        TomatoCount.text = count.ToString() + " Ouf  of 1056 Plant's Pickedup";
 
-        if (count >= 20)
+        if (count >= 1056)
         {
-            loseTextObject.SetActive(true);
+            LoseText.SetActive(true);
             Time.timeScale = 0;
+
 
         }
     }

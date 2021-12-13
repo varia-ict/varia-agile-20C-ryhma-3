@@ -15,6 +15,8 @@ TagManager:
   - EnemyTomato
   - floor
   - Construction
+  - Plants
+  - Window
   layers:
   - Default
   - TransparentFX

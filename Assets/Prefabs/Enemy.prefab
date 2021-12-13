@@ -69,7 +69,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100108, guid: 698d7543eef02b44eb8758d362a8f1d0, type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: Enemy (1)
       objectReference: {fileID: 0}
     - target: {fileID: 100108, guid: 698d7543eef02b44eb8758d362a8f1d0, type: 3}
       propertyPath: m_TagString
@@ -81,15 +81,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400108, guid: 698d7543eef02b44eb8758d362a8f1d0, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 400108, guid: 698d7543eef02b44eb8758d362a8f1d0, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 400108, guid: 698d7543eef02b44eb8758d362a8f1d0, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 400108, guid: 698d7543eef02b44eb8758d362a8f1d0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -233,24 +233,6 @@ CapsuleCollider:
   m_Height: 2.0604722
   m_Direction: 1
   m_Center: {x: 0.03, y: 0.9183246, z: 4.4021943e-16}
---- !u!114 &593552458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3845297899986543680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 184b0728add1148a0a2126ff670ba3a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 3
-  isPlayer: 0
-  removeColliderOnDeath: 1
-  referer: {fileID: 0}
-  damageFactor: 1
-  healthText: {fileID: 0}
 --- !u!195 &593552459
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -273,26 +255,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &593552460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3845297899986543680}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 518678b517752cb4ca41261de72060a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  damage: 15
-  isAttacking: 0
-  shouldChase: 1
-  isInLateUpdate: 1
-  shouldUpdate: 1
-  attackSound: {fileID: 0}
-  deathSound: {fileID: 0}
 --- !u!114 &4908012848795432639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,6 +268,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distans: 0
-  speed: 2.32
-  countText: {fileID: 0}
-  loseTextObject: {fileID: 0}
+  speed: 1.54
+  TomatoCount: {fileID: 0}
+  LoseText: {fileID: 0}

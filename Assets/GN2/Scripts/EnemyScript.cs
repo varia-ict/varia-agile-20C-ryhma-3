@@ -6,9 +6,11 @@ public class EnemyScript : MonoBehaviour
 {
 
     public GameObject enemyPrefab;
-    private float spawnRange = 9.0f;
+    private float spawnRange = 16.0f;
     public int enemyCount;
     public int waveNumber = 1;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,7 +44,7 @@ public class EnemyScript : MonoBehaviour
         float spawnPosX = Random.Range(-spawnRange, spawnRange);
         float spawnPosZ = Random.Range(-spawnRange, spawnRange);
 
-        Vector3 randomPos = new Vector3(spawnPosX, spawnPosZ, 6);
+        Vector3 randomPos = new Vector3(spawnPosX, -1, 7);
 
         return randomPos;
     }

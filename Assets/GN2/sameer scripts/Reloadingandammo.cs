@@ -21,6 +21,7 @@ public class Reloadingandammo : MonoBehaviour
     public Text ammoDisplay;
     public AudioSource shootSfx;
 
+    public float counter = 2;
     // Start is called before the first frame update
     void Start()
     {

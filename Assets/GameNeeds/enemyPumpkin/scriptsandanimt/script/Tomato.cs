@@ -10,7 +10,6 @@ public class Tomato : MonoBehaviour
     private Rigidbody tomatoRb;
 
 
-
     // Start is called before the first frame update
 
     void Start()
@@ -35,9 +34,9 @@ public class Tomato : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Floor")
+
         {
-            Debug.Log("Collided");
+            Destroy(GameObject.FindWithTag("Enemy"));
         }
 
     }

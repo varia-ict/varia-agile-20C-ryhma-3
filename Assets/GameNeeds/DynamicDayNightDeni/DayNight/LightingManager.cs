@@ -39,14 +39,14 @@ public class LightingManager : MonoBehaviour
         if (DayNro != nextDay && TimeOfDay < .5f)
         {
             DayNro = nextDay;
-            Debug.Log("UUSI PÄIVÄ");
+          
         }
 
         // jos pelipäivä on päivitetty mutta nextday on yhä nykyinen päivä, päivitä nextday.
         if (nextDay == DayNro && TimeOfDay > .5f)
         {
             nextDay++;
-            Debug.Log("Seuraava päivä");
+           
         }
     }
 

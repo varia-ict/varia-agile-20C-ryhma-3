@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100108, guid: 698d7543eef02b44eb8758d362a8f1d0, type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: pumpkin
       objectReference: {fileID: 0}
     - target: {fileID: 100108, guid: 698d7543eef02b44eb8758d362a8f1d0, type: 3}
       propertyPath: m_TagString
@@ -169,4 +169,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distans: 0
   speed: 10
-  loseTextObject: {fileID: 0}
+  TomatoCount: {fileID: 0}
+  LoseText: {fileID: 0}
