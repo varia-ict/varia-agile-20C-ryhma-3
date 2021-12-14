@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyScript : MonoBehaviour
 {
 
+   // public float enemyHealth = 3;
     public GameObject enemyPrefab;
     private float spawnRange = 16.0f;
     public int enemyCount;

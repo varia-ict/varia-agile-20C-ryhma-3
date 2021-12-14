@@ -9,6 +9,7 @@ public class Tomato : MonoBehaviour
     public float speed;
     private Rigidbody tomatoRb;
 
+   // public EnemyScript es;
 
     // Start is called before the first frame update
 
@@ -32,10 +33,12 @@ public class Tomato : MonoBehaviour
         }
 
     }
+
     void OnTriggerEnter(Collider other)
     {
-
+        if(other.CompareTag("Enemy"))
         {
+           //es.enemyHealth--;
             Destroy(GameObject.FindWithTag("Enemy"));
         }
 
