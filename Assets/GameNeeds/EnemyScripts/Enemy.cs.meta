@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 4774a81d819d947e0a94b89f71fe7e71
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - CountTomato: {fileID: 5784953982548695813, guid: 4d12ab83fb646314884f6b3563cf6cf8, type: 3}
+  - LoseText: {fileID: 5254752739514585557, guid: 6c683668988796c4884f7f07b3be076f, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

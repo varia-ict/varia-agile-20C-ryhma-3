@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7462724008584963193
+--- !u!1 &5784953982548695811
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7462724008584963194}
-  - component: {fileID: 7462724008584963195}
-  - component: {fileID: 7462724008584963140}
+  - component: {fileID: 5784953982548695812}
+  - component: {fileID: 5784953982548695814}
+  - component: {fileID: 5784953982548695813}
   m_Layer: 5
   m_Name: TomatoCount
-  m_TagString: Untagged
+  m_TagString: TomatoCount
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &7462724008584963194
+--- !u!224 &5784953982548695812
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7462724008584963193}
+  m_GameObject: {fileID: 5784953982548695811}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -37,21 +37,21 @@ RectTransform:
   m_AnchoredPosition: {x: 250, y: -57}
   m_SizeDelta: {x: 422.5297, y: 48.9354}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &7462724008584963195
+--- !u!222 &5784953982548695814
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7462724008584963193}
+  m_GameObject: {fileID: 5784953982548695811}
   m_CullTransparentMesh: 1
---- !u!114 &7462724008584963140
+--- !u!114 &5784953982548695813
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7462724008584963193}
+  m_GameObject: {fileID: 5784953982548695811}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -65,10 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Tomato''s Pickedup :
-
-
-'
+  m_text: 0 Ouf  of 980 Plant's Pickedup
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 14ee3250e39754dfc9446c0b17b99539, type: 2}
   m_sharedMaterial: {fileID: -7179978793958148615, guid: 14ee3250e39754dfc9446c0b17b99539, type: 2}

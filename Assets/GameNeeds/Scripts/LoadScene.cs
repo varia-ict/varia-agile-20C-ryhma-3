@@ -8,16 +8,20 @@ using UnityEngine.UI;
 
 public class LoadScene : MonoBehaviour
 {
+    //plays main game scene by taking scenemanegment  system and loadingscene by the  name
     public void PlayGame()
     {
         SceneManager.LoadScene("deni");
     }
+
+    //quits game with debuglog too
 
     public void QuitGame()
     {
         Debug.Log("Quit!");
         Application.Quit();
     }
+    #region github links
     public void OpenGITHUB()
     {
         Application.OpenURL("https://github.com/varia-ict/varia-agile-20C-ryhma-3");
@@ -46,6 +50,7 @@ public class LoadScene : MonoBehaviour
     {
         Application.OpenURL("https://github.com/zeta404-ops");
     }
+    #endregion
     public void LoadCredit()
     {
         SceneManager.LoadScene("Credits");

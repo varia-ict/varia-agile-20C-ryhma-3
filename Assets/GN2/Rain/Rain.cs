@@ -25,6 +25,7 @@ public class Rain : MonoBehaviour
     void FixedUpdate()
     {
         dayNro = LightingManager.Instance.DayNro;
+
         // rain start 50%
         var random = Random.value > 0.5f;
 
@@ -74,6 +75,7 @@ public class Rain : MonoBehaviour
     [System.Obsolete]
     void RainStop()
     {
+
         timer = timer + Time.deltaTime;
         if (timer >= 60)
         {

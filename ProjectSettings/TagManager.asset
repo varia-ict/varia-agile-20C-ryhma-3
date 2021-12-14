@@ -17,6 +17,8 @@ TagManager:
   - Construction
   - Plants
   - Window
+  - TomatoCount
+  - LoseText
   layers:
   - Default
   - TransparentFX
